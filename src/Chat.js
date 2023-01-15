@@ -14,6 +14,7 @@ function Chat() {
     return () => {
         socket.off("message", 'desconectado');
      }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [socket]);
 
   function updateMessages(message) {
